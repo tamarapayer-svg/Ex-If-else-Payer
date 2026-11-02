@@ -1,3 +1,21 @@
-# Título
+In setup() I define the initial settings:
+- createCanvas(windowWidth, windowHeight): this way I create a full-screen canvas that adapts to the size of the browser window.
+- noStroke(): to remove the borders from geometric shapes.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod convallis magna ut pulvinar. Nulla iaculis, metus in semper vestibulum, lorem quam fringilla tellus, eu varius leo dui ac neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed faucibus ultrices ante, ut suscipit est euismod ut. Duis sit amet dictum turpis. Fusce non turpis porta nisi iaculis eleifend. Donec eget lobortis risus. Proin molestie tincidunt elit. Donec a enim ac neque tristique molestie. Sed nibh massa, dignissim at ipsum non, volutpat aliquam erat. Sed tincidunt quis urna a semper. Phasellus leo orci, imperdiet et ullamcorper non, finibus eu nunc. Duis vel ligula ac orci tincidunt aliquam. Suspendisse potenti. Sed congue lectus at aliquet cursus. 
+In draw 
+First if/else condition:
+- mouseX < width / 2): I check the horizontal position of the cursor.
+- If the cursor is on the left half of the Canvas: it becomes light blue (background(200, 230, 250)) and the circle becomes yellow (fill(255, 204, 0)).
+- If the cursor is on the right half of the Canvas: it becomes dark blue (background(25, 25, 112)) and the circle becomes white (fill(255, 255, 255)).
+Second if/else condition:
+- (mouseIsPressed): I control the size of the circle which, when pressed, goes from size (d) 150 pixels to 250 pixels and is therefore enlarged.
+In the final part:
+- function: (circle(mouseX, mouseY, d)) = mouseX and mouseY allow the circle shape to always follow the cursor's position on the screen.
+- d indicates the size of the circle which is defined by the previous point.
+
+AI Support 
+I was helped to:
+1. Understand which RGB codes corresponded to the various colors.
+2. Write the if/else conditions (in particular to manage the circle's size in pixels and to understand how to define the mouse position on the canvas).
+
+This interactive artwork explores the concept of duality, representing the contrast between day and night, warmth and cold. By dividing the canvas into two distinct atmospheres, a sun represented by a yellow circle on a light blue background and a moon represented by a white circle on a dark blue canvas, the piece allows the user to navigate between two different emotional states. The second part of the interaction is represented by by clicking the circle. With this action increases the physical connection between the user and the digital space. 
